@@ -68,5 +68,5 @@ Replace the placeholders with your actual values:
 Ensure the script is executable and run it to set up the project:
 ```bash
 chmod +x script.sh
-./ script.sh
+./script.sh
 ```

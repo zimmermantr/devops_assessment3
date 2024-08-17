@@ -1,11 +1,10 @@
-require('dotenv').config();
+require('dotenv').config(); // added to use env variables
 const express = require('express');
 const request = require('request');
 
 const app = express();
-// const port = 3000;
-const port =process.env.FRONT_PORT || 3000;
-const restApiUrl = process.env.REST_API_URL || 'http://backend:3001/data';
+const port =process.env.FRONT_PORT; // changed to use env variable
+const restApiUrl = process.env.REST_API_URL; // changed to use env variable
 
 app.get('/', function(req, res) {
     request(
